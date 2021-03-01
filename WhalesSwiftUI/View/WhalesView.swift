@@ -35,6 +35,7 @@ struct WhalesView: View {
         
         if states.selectedWhale != nil {
           whaleSelection
+            .zIndex(2)
         }
       }
     }
@@ -64,7 +65,6 @@ struct WhalesView: View {
           }
         }
       }
-      .zIndex(2)
   }
   
   func whalesGrid(_ proxy: GeometryProxy) -> some View {

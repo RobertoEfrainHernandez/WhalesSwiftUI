@@ -80,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57929D4A25ED7CDA000F3AC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57B7345825EC1FC0004815A6 /* WhalesView.swift */,
+				57B734BB25EC7194004815A6 /* WhaleRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57929D4B25ED7CE6000F3AC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57B7349125EC2668004815A6 /* Whale.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		57B7344A25EC1FBF004815A6 = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				57B7345625EC1FC0004815A6 /* WhalesSwiftUIApp.swift */,
-				57B7345825EC1FC0004815A6 /* WhalesView.swift */,
-				57B734BB25EC7194004815A6 /* WhaleRow.swift */,
-				57B7349125EC2668004815A6 /* Whale.swift */,
+				57929D4B25ED7CE6000F3AC9 /* Model */,
+				57929D4A25ED7CDA000F3AC9 /* View */,
 				57B734C625EC9418004815A6 /* WhaleRowModifier.swift */,
 				57B7345A25EC1FC2004815A6 /* Assets.xcassets */,
 				57B7345F25EC1FC2004815A6 /* Info.plist */,
