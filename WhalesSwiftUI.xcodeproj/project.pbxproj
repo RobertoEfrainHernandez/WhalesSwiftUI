@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		57B7345725EC1FC0004815A6 /* WhalesSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7345625EC1FC0004815A6 /* WhalesSwiftUIApp.swift */; };
-		57B7345925EC1FC0004815A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7345825EC1FC0004815A6 /* ContentView.swift */; };
+		57B7345925EC1FC0004815A6 /* WhalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7345825EC1FC0004815A6 /* WhalesView.swift */; };
 		57B7345B25EC1FC2004815A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B7345A25EC1FC2004815A6 /* Assets.xcassets */; };
 		57B7345E25EC1FC2004815A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B7345D25EC1FC2004815A6 /* Preview Assets.xcassets */; };
 		57B7346925EC1FC2004815A6 /* WhalesSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7346825EC1FC2004815A6 /* WhalesSwiftUITests.swift */; };
 		57B7347425EC1FC2004815A6 /* WhalesSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7347325EC1FC2004815A6 /* WhalesSwiftUIUITests.swift */; };
+		57B7349225EC2668004815A6 /* Whale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7349125EC2668004815A6 /* Whale.swift */; };
+		57B734BC25EC7194004815A6 /* WhaleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B734BB25EC7194004815A6 /* WhaleRow.swift */; };
+		57B734C225EC7E4B004815A6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 57B734C125EC7E4B004815A6 /* SDWebImageSwiftUI */; };
+		57B734C725EC9418004815A6 /* WhaleRowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B734C625EC9418004815A6 /* WhaleRowModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 /* Begin PBXFileReference section */
 		57B7345325EC1FC0004815A6 /* WhalesSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhalesSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B7345625EC1FC0004815A6 /* WhalesSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhalesSwiftUIApp.swift; sourceTree = "<group>"; };
-		57B7345825EC1FC0004815A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		57B7345825EC1FC0004815A6 /* WhalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhalesView.swift; sourceTree = "<group>"; };
 		57B7345A25EC1FC2004815A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57B7345D25EC1FC2004815A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57B7345F25EC1FC2004815A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +49,9 @@
 		57B7346F25EC1FC2004815A6 /* WhalesSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhalesSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B7347325EC1FC2004815A6 /* WhalesSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhalesSwiftUIUITests.swift; sourceTree = "<group>"; };
 		57B7347525EC1FC2004815A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B7349125EC2668004815A6 /* Whale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Whale.swift; sourceTree = "<group>"; };
+		57B734BB25EC7194004815A6 /* WhaleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleRow.swift; sourceTree = "<group>"; };
+		57B734C625EC9418004815A6 /* WhaleRowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleRowModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B734C225EC7E4B004815A6 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				57B7345625EC1FC0004815A6 /* WhalesSwiftUIApp.swift */,
-				57B7345825EC1FC0004815A6 /* ContentView.swift */,
+				57B7345825EC1FC0004815A6 /* WhalesView.swift */,
+				57B734BB25EC7194004815A6 /* WhaleRow.swift */,
+				57B7349125EC2668004815A6 /* Whale.swift */,
+				57B734C625EC9418004815A6 /* WhaleRowModifier.swift */,
 				57B7345A25EC1FC2004815A6 /* Assets.xcassets */,
 				57B7345F25EC1FC2004815A6 /* Info.plist */,
 				57B7345C25EC1FC2004815A6 /* Preview Content */,
@@ -146,6 +157,9 @@
 			dependencies = (
 			);
 			name = WhalesSwiftUI;
+			packageProductDependencies = (
+				57B734C125EC7E4B004815A6 /* SDWebImageSwiftUI */,
+			);
 			productName = WhalesSwiftUI;
 			productReference = 57B7345325EC1FC0004815A6 /* WhalesSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 57B7344A25EC1FBF004815A6;
+			packageReferences = (
+				57B734C025EC7E4B004815A6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 57B7345425EC1FC0004815A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B7345925EC1FC0004815A6 /* ContentView.swift in Sources */,
+				57B7345925EC1FC0004815A6 /* WhalesView.swift in Sources */,
+				57B734C725EC9418004815A6 /* WhaleRowModifier.swift in Sources */,
+				57B7349225EC2668004815A6 /* Whale.swift in Sources */,
+				57B734BC25EC7194004815A6 /* WhaleRow.swift in Sources */,
 				57B7345725EC1FC0004815A6 /* WhalesSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57B734C025EC7E4B004815A6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57B734C125EC7E4B004815A6 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57B734C025EC7E4B004815A6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57B7344B25EC1FC0004815A6 /* Project object */;
 }
